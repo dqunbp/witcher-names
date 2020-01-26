@@ -1,7 +1,7 @@
 var uniqueRandomArray = require("unique-random-array");
-var starWarsNames = require("./starwars-names.json");
+var witcherNames = require("./witcher-names.json");
 
 module.exports = {
-  all: starWarsNames,
-  random: uniqueRandomArray(starWarsNames)
+  all: witcherNames,
+  random: uniqueRandomArray(witcherNames)
 };

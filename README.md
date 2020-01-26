@@ -1,1 +1,1 @@
-# starwars-names
+# witcher-names
