@@ -22,5 +22,12 @@ describe("witcher-names", function() {
     it("should return a random item from witcher.all", () => {
       expect(witcher.all).to.include(witcher.random());
     });
+    it("should return an array of random items if passed a number", () => {
+      var randomItems = witcher.random(3);
+      expect(randomItems).to.have.length(3);
+      randomItems.forEach(function(item) {
+        expect(witcher.all).to.include(item);
+      });
+    });
   });
 });
