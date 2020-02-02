@@ -1,5 +1,5 @@
-var expect = require("chai").expect;
-var witcher = require(".");
+import { expect } from "chai";
+import witcher from ".";
 
 describe("witcher-names", function() {
   describe("all", function() {
