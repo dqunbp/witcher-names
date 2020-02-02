@@ -34,6 +34,11 @@
     "mocha": "7.0.1",
     "semantic-release": "^17.0.2"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:single"
+    }
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
@@ -44,11 +49,6 @@
       "defaultSubject": "",
       "defaultBody": "",
       "defaultIssues": ""
-    },
-    "husky": {
-      "hooks": {
-        "pre-commit": "npm run test:single"
-      }
     }
   }
 }
