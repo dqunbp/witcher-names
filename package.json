@@ -2,7 +2,7 @@
   "name": "witcher-names",
   "version": "0.0.0-semantically-released",
   "description": "Get random Witcher names",
-  "main": "dist/index.js",
+  "main": "dist/index.umd.min.js",
   "files": [
     "dist",
     "README.md"
