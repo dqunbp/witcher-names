@@ -1,5 +1,5 @@
-var uniqueRandomArray = require("unique-random-array");
-var witcherNames = require("./witcher-names.json");
+import uniqueRandomArray from "unique-random-array";
+import witcherNames from "./witcher-names.json";
 var getRandomItem = uniqueRandomArray(witcherNames);
 
 module.exports = {
