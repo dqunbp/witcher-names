@@ -26,3 +26,9 @@ var allNames = names.all;
 var randomName = names.random();
 var threeRandomNames = names.random(3);
 ```
+
+You can also use `umd` build
+
+```html
+<script src="https://unpkg.com/witcher-names@1.1.1/dist/index.umd.min.js"></script>
+```
