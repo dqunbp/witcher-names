@@ -4,9 +4,10 @@
   "description": "Get random Witcher names",
   "main": "src/index.js",
   "scripts": {
+    "check-coverage": "nyc check-coverage",
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
-    "test:single": "mocha src/index.test.js",
+    "test:single": "nyc mocha src/index.test.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -32,12 +33,19 @@
     "cz-conventional-changelog": "3.1.0",
     "husky": "4.2.1",
     "mocha": "7.0.1",
+    "nyc": "15.0.0",
     "semantic-release": "^17.0.2"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run test:single"
     }
+  },
+  "nyc": {
+    "branches": 100,
+    "lines": 100,
+    "functions": 100,
+    "statements": 100
   },
   "config": {
     "commitizen": {
