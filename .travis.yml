@@ -12,6 +12,8 @@ jobs:
       script:
         - npm run test:single
         - npm run check-coverage
+      after_success:
+        - npm run report-coverage
       deploy:
         provider: script
         skip_cleanup: true
